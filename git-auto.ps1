@@ -20,3 +20,6 @@ git push
 
 Pause
 Clear-Host
+
+# ps c:\> powershell -ExecutionPolicy Bypass -File git-auto.ps1
+# ps c:\> .\git-auto.ps1
