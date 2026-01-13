@@ -1,4 +1,4 @@
-package u3;
+
 public class Transpuesta {
 
     // Metodo de impresion de matrices
@@ -26,39 +26,26 @@ public class Transpuesta {
     }
 
   public static void main(String[] args) {
-    // matriz transpuesta
     int[][] a = {{1, 2, 3, 4}, 
                  {5, 6, 7, 8}, 
                  {9, 10, 11, 12}};
     int f = a.length;
     int c = a[0].length;             
 
-
+    // transpuesta maual
     int[][] t = new int[c][f];
-
-   /* 
-    for (int i = 0; i < t.length; i++) {
-      for (int j = 0; j < t[i].length; j++) {
-        t[i][j] = a[j][i];
-      }
-    }
-    */
-
     for (int i = 0; i < f; i++) {
       for (int j = 0; j < c; j++) {
         t[j][i] = a[i][j];
       }
     }
-    System.out.println(t);
-    imprimirMatriz(t);
-    System.out.println("----------");
-    System.out.println("que va a salir:");
-    System.out.println(transpuesta(a));
-    t = transpuesta(a);
-    
+
+    System.out.println("Matriz original");
     imprimirMatriz(a);
     System.out.println("Matriz transpuesta");
-    imprimirMatriz(t);
+    int [][] trans = transpuesta(a);
+    System.out.println(trans);
+    System.out.println(". . . Hecho");
 
   }
 
