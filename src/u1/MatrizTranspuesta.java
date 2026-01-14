@@ -1,6 +1,8 @@
 package u1;
 import static mat.Fn.*;
 
+import mat.Fn;
+
 public class MatrizTranspuesta {
     public static void main(String[] args) {
         // Entrada de datos
@@ -10,11 +12,11 @@ public class MatrizTranspuesta {
                 { 7, 8, 9 }
         };
 
-        int[][] transpuesta = transponerMatriz(matriz);
+        int[][] transpuesta = Fn.transponerMatriz(matriz);
 
         // Salida de datos
         System.out.println("Matriz Original:");
-        imprimirMatriz(matriz);
+        Fn.imprimirMatriz(matriz);
    
         System.out.println("\nMatriz Transpuesta:");
         imprimirMatriz(transpuesta);

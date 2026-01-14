@@ -23,6 +23,7 @@ public class MatrizAvg {
 
         double avgTotal = 0;
         for (int i = 0; i < F; i++) {
+            
             for (int j = 0; j < C; j++) {
                 avgAlumnos[i] = avgAlumnos[i] + calificaciones[i][j] / C;
                 avgMaterias[j] += calificaciones[i][j] / F;
