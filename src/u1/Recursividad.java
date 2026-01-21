@@ -14,7 +14,7 @@ public class Recursividad {
         if (n <= 1) {
             return 1;
         } else {
-            return n * factorial(n - 1);
+            return n * factorialR(n - 1);
         }
     }
 
@@ -31,6 +31,7 @@ public class Recursividad {
         } else {
             System.out.println(n);
             contadorDescendenteR(n - 1); //recursive case
+
         } 
     }
 
@@ -42,11 +43,28 @@ public class Recursividad {
         }
         return result;
     }
+ /*
+    // Tabla de multiplicar(5)
+    5*10= 50
+    5*9 = 45
+    . . .
+    5*1 = 5
+  
+    
+    5*1 = 5
+    5*2 =10
+    . . .
+    5*10 =50
+*/
  
-    // Tabla de multiplicar
+
+
     
 
     public static void main(String[] args) {
+        int r = factorialR(4);
+        System.out.println(r);
+        contadorDescendenteR(5);
 
     }
 }
