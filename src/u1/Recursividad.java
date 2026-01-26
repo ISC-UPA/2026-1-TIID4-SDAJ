@@ -43,6 +43,22 @@ public class Recursividad {
         }
         return result;
     }
+
+    // Método con un parámetro (llama al método con dos parámetros)
+    public static void tablaR(int n) {
+        tablaR(n, 10);  // Valor por defecto de i = 10
+    }
+    
+    // Método con dos parámetros (el recursivo)
+    public static void tablaR(int n, int i) {
+        if (i == 0) {
+            return;
+        } else {
+            System.out.println(n + " x " + i + " = " + (n * i));
+            tablaR(n, i - 1);
+        }
+    }
+
  /*
     // Tabla de multiplicar(5)
     5*10= 50
@@ -65,6 +81,8 @@ public class Recursividad {
         int r = factorialR(4);
         System.out.println(r);
         contadorDescendenteR(5);
+        tablaR(5);
+        tablaR(3, 5);
 
     }
 }
