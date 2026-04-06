@@ -2,9 +2,6 @@ package u1.sort;
 public class SelectionSort {
 
     public static void selectionSort(int[] arr) {
-        // Crear una copia de arreglo original para no modificarlo
-        int[] arr_copy = arr.clone();
-
         int n = arr.length;
         for (int i = 0; i < n-1; i++) {
             int min_index = i;

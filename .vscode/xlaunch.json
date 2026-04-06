@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Run TablaFX (JavaFX)",
+      "request": "launch",
+      "mainClass": "TablaFX",
+      "vmArgs": "--module-path \"${workspaceFolder}/lib\" --add-modules ALL-MODULE-PATH --enable-native-access=javafx.graphics"
+    }
+  ]
+}

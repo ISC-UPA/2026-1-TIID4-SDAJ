@@ -3,5 +3,8 @@
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
-    ]
+    ],
+    "java.debug.settings.vmArgs": "--module-path \"C:/Apps/javafx-sdk-25.0.2/lib\" --add-modules ALL-MODULE-PATH --enable-native-access=javafx.graphics"  //ok
+    // "java.debug.settings.vmArgs": "--module-path \"${workspaceFolder}/lib\" --add-modules ALL-MODULE-PATH --enable-native-access=javafx.graphics"
+    //"java.debug.settings.vmArgs": "--module-path \"G:\\Mi unidad\\home\\core\\code\\2026-1-TIID4-SDAJ\\lib\" --add-modules ALL-MODULE-PATH --enable-native-access=javafx.graphics"
 }
